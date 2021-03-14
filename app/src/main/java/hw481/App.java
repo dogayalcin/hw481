@@ -22,6 +22,9 @@ public class App {
         
         System.out.println(new App().getGreeting());
         
+        int port=Integer.parseInt(System.getenv("PORT"));
+        port(port);
+
         get("/",(req,res) -> "WELCOME");
 
         get("/compute",
@@ -34,8 +37,7 @@ public class App {
         );
 
         post("/compute", (req, res) -> {
-            //System.out.println(req.queryParams("input1"));
-            //System.out.println(req.queryParams("input2"));
+            
   
             String input1 = req.queryParams("input1");
             java.util.Scanner sc1 = new java.util.Scanner(input1);
