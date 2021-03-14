@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import spark.ModelAndView;
 import spark.template.mustache.MustacheTemplateEngine;
 
@@ -20,6 +23,9 @@ public class App {
 
     public static void main(String[] args) {
         
+        Logger logger = LogManager.getLogger();
+        logger.error("hello world");
+
         System.out.println(new App().getGreeting());
         
         int port=Integer.parseInt(System.getenv("PORT"));
