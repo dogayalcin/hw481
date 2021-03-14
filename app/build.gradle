@@ -11,7 +11,7 @@ plugins {
     id 'application'
 
     id 'java'
-
+    
     id 'com.github.johnrengelman.shadow' version '6.1.0'
 }
 
@@ -41,7 +41,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'hw481.App'
+    mainClassName = 'hw481.App'
 }
 
 tasks.named('test') {
