@@ -21,10 +21,11 @@ public class App {
     public static void main(String[] args) {
         
         System.out.println(new App().getGreeting());
-        
+        try{
         int port=Integer.parseInt(System.getenv("PORT"));
         port(port);
-
+        }
+        catch(Exception e){}
         get("/",(req,res) -> "WELCOME");
 
         get("/compute",

@@ -1,1 +1,1 @@
-web: java -jar build\libs\app-all.jar
+web: java -jar C:\Users\TUBA\Desktop\hw481\app\build\libs\app-all.jar
